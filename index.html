@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="vieport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="shortcut icon" type="image/png" href="favicon-32x32.png" />
+    <title>COUNTRY EXPLORER</title>
+  </head>
+  <body>
+    
+    <header id="header" class="box-light">
+      <h1>Where in the world?</h1>
+      <aside>
+        <img src="images/moon.svg" alt="dark_mode_icon" class="img-icon" id="dark_mode"/>
+        <img src="images/sun.svg" alt="dark_mode_icon" class="img-icon sun" id="light_mode"/> 
+        <p id="mode">Dark Mode</p>
+      </aside>
+    </header>
+    <main class="main-tab ">
+      <div class="search-region">
+        <div class="input-cont box-light">
+          <img src="images/search.svg" alt="search_icon" class="img-icon" id="enter-img"/>
+          <input type="text" id="country"  placeholder="Search for a country..." />
+        </div>
+
+        <div class="drop-down">
+          <div class="region-cont box-light">
+            <p>Filter by Region</p>
+            <img src="images/chevron-up.svg" alt="drop_down_icon" id="drop_down_icon"/>
+          </div>
+          <ul id="ul-drop" class="box-light">
+            <li class="li-region">Africa</li>
+            <li class="li-region">Americas</li>
+            <li class="li-region">Asia</li>
+            <li class="li-region">Europe</li>
+            <li class="li-region">Oceania</li>
+          </ul>
+        </div>
+      </div>
+      <section class="flags-section" loading="lazy">
+      </section>
+    </main>
+  
+      <section class="overview">
+        <button id="btn" class="back-btn box-light">
+          <img   src="images/arrow-left.svg" alt="left_arrow_icon" id="arrow-left"/>
+          <span id="btn-text" >Back</span>
+        </button>
+        <div class="country-overview">
+          <img alt="flag-overview" id="overview-img"/>
+          <div>
+            <h2 id="overview-name">sao tome</h2>
+            <ul>
+              <li>Native Name: <span class="over-span1 light"></span></li>
+              <li>population: <span class="over-span2 light"></span></li>
+              <li>region: <span class="over-span3 light"></span></li>
+              <li>sub region: <span class="over-span4 light"></span></span></li>
+              <li>capital: <span class="over-span5 light"></span></li>
+              <li>top level domain: <span class="over-span6 light"></span></li>
+              <li>currencies: <span class="over-span7 light"></span></li>
+              <li>languages: <span class="over-span8 light"></span></li>
+        
+            </ul>
+            <div class="border-country">
+              <p>Border Countries:</p>
+              <p class="span-country"> 
+            </p>
+            </div>
+          </div>
+        </div>
+      </section>
+<script  type="module"  src="index.js" ></script>
+  </body>
+</html>
